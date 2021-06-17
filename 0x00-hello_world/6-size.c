@@ -5,7 +5,8 @@
  * Return: zero
  */
 int main(void)
-{	char charType
+{	
+	char charType;
 	int intType;
 	long int longType;
 	long long int longlongType;
