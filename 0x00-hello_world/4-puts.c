@@ -1,7 +1,7 @@
 #include<studio.h>
-int main(void)
+int main()
 {
-	char MyStr = "Programming is like building a multilingual puzzle";
+	char MyStr[] = "Programming is like building a multilingual puzzle";
 
 	puts(MyStr);
 	
