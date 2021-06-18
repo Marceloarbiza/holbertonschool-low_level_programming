@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * main - print comb
+ *
+ * Return: zero
+ */
 int main(void)
 {
 	int i;
