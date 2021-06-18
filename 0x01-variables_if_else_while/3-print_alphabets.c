@@ -1,8 +1,15 @@
 #include <stdio.h>
-int main(void){
+/**
+ * main - alpha c
+ *
+ * Return: zero
+ */
+int main(void)
+	{
 	char c, a, line;
 	line = '\n';
-	for (c = 'a'; c <= 'z'; c++)
+
+		for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
 	}
@@ -10,6 +17,6 @@ int main(void){
 	{
 		putchar(a);
 	}
-	putchar(line);
-	return(0);
+	putchar (line);
+	return (0);
 }
