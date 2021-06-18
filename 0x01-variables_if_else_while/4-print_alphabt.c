@@ -1,16 +1,31 @@
 #include <stdio.h>
-int main(void){
-        char c, line;
-        line = '\n';
-        for (c = 'a' ; c <= 'z' ; c++){	
-		if(c == 'e'){
+/**
+ * main - alpha
+ *
+ * Return: zero
+ */
+int main(void)
+{
+	char c, line;
+
+	line = '\n';
+
+	for (c = 'a' ; c <= 'z' ; c++)
+	{
+		if (c == 'e')
+		{
 			continue;
-		}else if(c == 'q'){
+		}
+		else if (c == 'q')
+		{
 			continue;
-		}else{
+		}
+		else
+		{
 			putchar (c);
 		}
-        }
-        putchar (line);
-        return (0);
+
+	}
+	putchar (line);
+	return (0);
 }
