@@ -1,6 +1,13 @@
 #include <stdio.h>
-int main(void){
+/**
+ * main - alpha
+ *
+ * Return: zero
+ */
+int main(void)
+{
 	char c, line;
+
 	line = '\n';
 	for (c = 'a' ; c <= 'z' ; c++)
 	{
