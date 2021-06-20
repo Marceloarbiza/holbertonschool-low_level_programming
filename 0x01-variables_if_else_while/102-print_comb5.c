@@ -18,8 +18,9 @@ int main(void)
               		for (c = 0 ; c <= 9 ; c++)
 			{
 				for (d = 0 ; d <= 9 ; d++)
-				{		if (c + d > i + z)
-						{	
+				{
+						if (c * 10 + d > i * 10 + z)
+						{	 
                                                 	putchar(i + '0');
                                                 	putchar(z + '0');
 							putchar(' ');
