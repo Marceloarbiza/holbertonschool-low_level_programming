@@ -39,7 +39,7 @@ void print_to_98(int n)
 						_putchar(',');
 						_putchar(' ');
 					}
-					else
+					else if (g >= 10 && g < 100)
 					{
 						_putchar('-');
 						_putchar((g / 10) + '0');
