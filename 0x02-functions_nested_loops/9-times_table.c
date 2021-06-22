@@ -13,6 +13,7 @@ void times_table(void)
 		for (f = 0 ; f < 10 ; f++)
 		{
 			int g = i * f;
+
 			if (g >= 10)
 			{
 				_putchar((g / 10) + '0');
@@ -29,5 +30,5 @@ void times_table(void)
 			}
 		}
 		_putchar('\n');
-	}	
+	}
 }
