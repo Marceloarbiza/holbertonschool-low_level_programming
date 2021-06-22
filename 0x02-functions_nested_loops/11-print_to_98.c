@@ -27,7 +27,7 @@ void print_to_98(int n)
 					{
 						_putchar('-');
 						_putchar((g / 100)+ '0');
-						_putchar((g / 100) + 10 + '0');
+						_putchar((g / 10) + 10 + '0');
 						_putchar((g % 10) + '0');
 						_putchar(',');
 						_putchar(' ');
