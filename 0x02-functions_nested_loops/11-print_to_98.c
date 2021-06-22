@@ -23,6 +23,14 @@ void print_to_98(int n)
 				else if (i < 0) 
 				{
 					g = i * -1;
+					if (g >= 100)
+					{
+						_putchar((i / 100)+ '0');
+						_putchar((i / 100) + 10 + '0');
+						_putchar((i % 10) + '0');
+						_putchar(',');
+						_putchar(' ');
+					}
 					if (g < 10)
 					{
 						_putchar('-');
