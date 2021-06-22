@@ -1,3 +1,4 @@
+#include <holberton.h>
 #include <stdio.h>
 /**
  * main - holberton
@@ -6,6 +7,6 @@
  */
 int main(void)
 {
-	printf("Holberton");
+	_putchar("Holberton");
 	return (0);
 }
