@@ -4,8 +4,7 @@
  *
  * Return: zero
  */
-void print_alphabet(void)
-/*print alphabet*/
+void print_alphabet(void) /*print alphabet*/
 {
 	char i;
 
