@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * times_table
+ * times_table - table
  *
  */
 void times_table(void)
