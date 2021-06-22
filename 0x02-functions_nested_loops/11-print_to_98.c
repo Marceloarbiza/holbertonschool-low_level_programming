@@ -25,6 +25,7 @@ void print_to_98(int n)
 					g = i * -1;
 					if (g >= 100)
 					{
+						_putchar('-');
 						_putchar((i / 100)+ '0');
 						_putchar((i / 100) + 10 + '0');
 						_putchar((i % 10) + '0');
