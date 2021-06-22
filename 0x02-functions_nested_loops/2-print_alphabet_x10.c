@@ -3,6 +3,8 @@
  * main - alphabet x ten
  *
  * Return: alphabet x ten
+ *
+ * alphabet
  */
 void print_alphabet_x10(void)
 {
