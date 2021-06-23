@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-        int i;
         long a;
         long b;
         long c;
@@ -15,16 +14,16 @@ int main(void)
         a = 1;
         b = 1;
 
-        for (i = 0 ; i < 49 ; i++)
+        while (res < 5000000)
         {
                 c = a + b;
-		if (c % 2 == 0 && res < 4000000)
+		if (c % 2 == 0)
 		{
 			res = res + c;
 		}
                 a = b;
                 b = c;
-
+		
         }
 	printf("%ld", res);
         printf("\n");
