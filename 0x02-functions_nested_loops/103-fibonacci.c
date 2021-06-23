@@ -1,30 +1,24 @@
 #include <stdio.h>
 /**
- * main - fibonacci
- *
- * Return: int
+ * main - prints sum of all even numbers in fibonacci sequence
+ * Return: returns 0
  */
 int main(void)
 {
-        long a;
-        long b;
-        long f;
-	long res;
+	long res, a, b, fib;
 
-        a = 1;
-        b = 1;
-
-        while(f < 4000000)
+	a = 1;
+	b = 1;
+	while (fib < 4000000)
 	{
-		f = a + b;
-		if ((f % 2) == 0)
+		fib = a + b;
+		if ((fib % 2) == 0)
 		{
-			res = res + f;
+			res += fib;
 		}
-		
 		a = b;
-		b = f;
+		b = fib;
 	}
-        printf("%ld\n", res);
-        return (0);
+	printf("%ld\n", res);
+	return (0);
 }
