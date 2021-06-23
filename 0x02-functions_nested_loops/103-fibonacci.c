@@ -23,7 +23,7 @@ int main(void)
 		}
                 a = b;
                 b = c;
-		
+
         }
 	printf("%ld", res);
         printf("\n");
