@@ -14,7 +14,6 @@ int main(void)
 	b = 1;
 
 	printf("%ld, ", a);
-	printf("%ld, ", b);
 
 	for (i = 0 ; i < 49 ; i++)
 	{
@@ -27,8 +26,10 @@ int main(void)
 		{
 			printf("%ld", c);
 		}
+
 		a = b;
 		b = c;
+
 	}
 	printf("\n");
 	return (0);
