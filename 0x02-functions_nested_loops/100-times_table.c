@@ -2,7 +2,7 @@
 #include "holberton.h"
 /**
  * print_times_table - print times
- *
+ * @n: character
  */
 void print_times_table(int n)
 {
