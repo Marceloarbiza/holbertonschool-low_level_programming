@@ -6,8 +6,7 @@
  */
 void print_times_table(int n)
 {
-	long i;
-	long f;
+	long i, f;
 
 	if (n == 0)
 	{
