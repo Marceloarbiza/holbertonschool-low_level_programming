@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - fibonacci four milloni
+ * main - fibonacci
  *
  * Return: int
  */
@@ -8,23 +8,23 @@ int main(void)
 {
         long a;
         long b;
-        long c;
+        long f;
 	long res;
-	
-	a = 1;
-        b = 2;
 
-        while (b < 4000000)
-        {
-                c = a + b;
-		if (c % 2 == 0)
+        a = 1;
+        b = 1;
+
+        while(f < 4000000)
+	{
+		f = a + b;
+		if ((f % 2) == 0)
 		{
-			res += c;
+			res = res + f;
 		}
-                	a = b;
-                	b = c;
-        }
-	printf("%ld", res);
-        printf("\n");
+		
+		a = b;
+		b = f;
+	}
+        printf("%ld\n", res);
         return (0);
 }
