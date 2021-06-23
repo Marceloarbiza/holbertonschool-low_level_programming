@@ -6,20 +6,27 @@
 int main(void)
 {
 	int i;
-	int a;
-	int b;
-	int c;
+	long a;
+	long b;
+	long c;
 
 	a = 1;
 	b = 1;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
+	printf("%ld, ", a);
+	printf("%ld, ", b);
 
-	for (i = 0 ; i < 50 ; i++)
+	for (i = 0 ; i < 49 ; i++)
 	{
 		c = a + b;
-		printf("%d, ", c);
+		if (i < 48)
+		{
+			printf("%ld, ", c);
+		}
+		else
+		{
+			printf("%ld", c);
+		}
 		a = b;
 		b = c;
 	}
