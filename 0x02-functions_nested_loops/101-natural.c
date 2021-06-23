@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "holberton.h"
+/**
+ * main - multiple
+ *
+ * Return: zero
+ */
+int main(void)
+{
+	int a, b;
+
+	for (a = 0; a < 1024 ; a++)
+	{
+		if (a % 3 == 0 || b % 5 == 0)
+		{
+			b += a;
+		}
+	}
+	printf("%d\n",b);
+	return (0);
+}
