@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
-* -_isdigit
-* @c: character
-*
-* Return: int
-*/
+ * _isdigit - digits
+ * @c:character
+ *
+ * Return: int
+ */
 int _isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
