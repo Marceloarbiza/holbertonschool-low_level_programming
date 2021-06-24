@@ -5,7 +5,6 @@
 /**
  * main - positive negative
  *
- * Return: zero
  */
 void main(int n)
 {
