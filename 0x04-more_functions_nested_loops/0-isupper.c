@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
  * _isupper - uppercase
+ * @c: character
  *
  * Return: int
  */
