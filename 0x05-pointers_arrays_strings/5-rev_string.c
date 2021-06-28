@@ -1,62 +1,22 @@
 #include "holberton.h"
 /**
- * _strlen - lenght
- * @s:char
- *
- * Return: int
- */
-int _strlen(char *s)
-{
-        int i;
-
-        for (i = 0 ; *(s + i) != '\0' ; i++)
-        {
-                continue;
-        }
-
-        return (i);
-}
-/**
- * print_rev - reverse
- * @s:character
- *
- */
-void print_rev(char *s)
-{
-        int i;
-        int j;
-
-        j = _strlen(s);
-
-        for (i = j ; *(s + i - 1) != '\0' ; i--)
-        {
-                _putchar(*(s + i - 1));
-        }
-        _putchar('\n');
-}
-/**
- * _puts - puts
- * @str:string
- *
- */
-void _puts(char *str)
-{
-	int i;
-
-	for (i = 0 ; *(str + i) != '\0' ; i++)
-	{
-		_putchar(*(str + i));
-	}
-	_putchar('\n');
-}
-/**
  * rev_string - rev string
  * @s:character
  *
  */
 void rev_string(char *s)
 {
-	_puts(s);
-	print_rev(s);
-	_putchar('\n');
+	char c[999];
+	int i;
+	int j;
+
+	for (i = 0 ; *(s + i) != '\0' ; i++)
+	{
+		c[i] = *(s + i);
+	}
+	
+	for (j = i ; j >= 0 ; j--)
+	{
+		*(s + (i - j)); 
+	}
 }
