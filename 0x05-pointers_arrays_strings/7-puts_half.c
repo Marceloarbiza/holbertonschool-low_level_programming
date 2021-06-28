@@ -14,11 +14,10 @@ void puts_half(char *str)
 		continue;
 	}
 
+	j = i - 1;
 
-	j = i -1;
-	
 	for (i = 0 ; *(str + i) != '\0' ; i++)
-	{	
+	{
 		if (i > (j / 2))
 		{
 			_putchar(*(str + i));
