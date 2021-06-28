@@ -1,14 +1,20 @@
 #include "holberton.h"
+/**
+ * _strlen - lenght
+ * @s:char
+ *
+ * Return: int
+ */
 int _strlen(char *s)
 {
-        int i;
+	int i;
 
-        for (i = 0 ; *(s + i) != '\0' ; i++)
-        {
-                continue;
-        }
+	for (i = 0 ; *(s + i) != '\0' ; i++)
+	{
+		continue;
+	}
 
-        return (i);
+	return (i);
 }
 /**
  * print_rev - reverse
@@ -22,9 +28,9 @@ void print_rev(char *s)
 
 	j = _strlen(s);
 
-	for (i = j ; *(s + i -1) != '\0' ; i--)
+	for (i = j ; *(s + i - 1) != '\0' ; i--)
 	{
-		_putchar(*(s + i -1));
+		_putchar(*(s + i - 1));
 	}
 	_putchar('\n');
 }
