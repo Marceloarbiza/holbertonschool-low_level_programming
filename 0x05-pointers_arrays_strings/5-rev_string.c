@@ -35,11 +35,28 @@ void print_rev(char *s)
         _putchar('\n');
 }
 /**
+ * _puts - puts
+ * @str:string
+ *
+ */
+void _puts(char *str)
+{
+	int i;
+
+	for (i = 0 ; *(str + i) != '\0' ; i++)
+	{
+		_putchar(*(str + i));
+	}
+	_putchar('\n');
+}
+/**
  * rev_string - rev string
  * @s:character
  *
  */
 void rev_string(char *s)
 {
+	_puts(s);
 	print_rev(s);
+	_putchar('\n');
 }
