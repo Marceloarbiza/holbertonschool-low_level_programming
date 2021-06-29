@@ -43,7 +43,7 @@ int _atoi(char *s)
 		}	
 	}
 	
-	int numi = num;
+	numi = num;
 	numi = numi * sig;
 	return (numi);
 }
