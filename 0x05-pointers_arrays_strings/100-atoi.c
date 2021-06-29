@@ -30,10 +30,14 @@ int _atoi(char *s)
 		if (*(s + i) >= '0' && *(s + i) <= '9')
 		{
 			num *= 10;
-			num += *(s + i) - '0';	
-		}	
+			num += *(s + i) - '0';
+		}
+		else
+		{
+			break;
+		}
 	}
-	
+
 	num *= sig;
 	numi = num;
 	return (numi);
