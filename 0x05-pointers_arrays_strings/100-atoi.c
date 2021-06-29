@@ -18,24 +18,19 @@ int _atoi(char *s)
 
 	for (i = 0 ; *(s + i) != '\0' ; i++)
 	{
+
+                if (*(s + i) >= '0' && *(s + i) <= '9')
+                {
+                        num *= 10;
+                        num += *(s + i) - '0';
+                }
+                else if (num)
+                {
+                        break;
+                }
 		if (*(s + i) == '-')
 		{
 			sig *= -1;
-		}
-	}
-
-	i = 0;
-
-	for (i = 0 ; *(s + i) != '\0' ; i++)
-	{
-		if (*(s + i) >= '0' && *(s + i) <= '9')
-		{
-			num *= 10;
-			num += *(s + i) - '0';
-		}
-		else if (num)
-		{
-			break;
 		}
 	}
 
