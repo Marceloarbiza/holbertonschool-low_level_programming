@@ -10,7 +10,6 @@ int _atoi(char *s)
 	int i;
 	double num;
 	int numi;
-	int neg;
 	int sig;
 
 	sig = 1;
