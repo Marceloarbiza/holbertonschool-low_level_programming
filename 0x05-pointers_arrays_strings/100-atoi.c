@@ -34,7 +34,7 @@ int _atoi(char *s)
 		}	
 	}
 	
+	num *= sig;
 	numi = num;
-	numi = numi * sig;
 	return (numi);
 }
