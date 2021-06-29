@@ -8,6 +8,7 @@
 int _atoi(char *s)
 {
 	int i;
+	int num;
 	int neg;
 	int sig;
 
@@ -28,5 +29,18 @@ int _atoi(char *s)
 	{
 		sig *= -1;
 	}
-	return (sig);
+
+	i = 0;
+
+	for (i = 0 ; *(s + i) != '\0' ; i++)
+	{
+		if (*(s + i) > 47 && *(s + i) < 58)
+		{
+			num *= 10;
+			num += *(s + i) - 48;	
+		}	
+	}
+
+	num = num * sig;
+	return (num);
 }
