@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int j;
 	int k;
 	int neg;
-	char sig;
+	int sig;
 	char tot[999];
 	char num[999];
 
@@ -24,11 +24,11 @@ int _atoi(char *s)
 	}
 	if (neg % 2 == 0)
 	{
-		sig = "+";
+		sig = 43;
 	}
 	else
 	{
-		sig = "-";
+		sig = 45;
 	}
 	
 	i = 0;
