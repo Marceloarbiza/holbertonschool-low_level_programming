@@ -12,6 +12,7 @@ int _atoi(char *s)
 	int k;
 	int neg;
 	int sig;
+	int retint;
 	int tot[999];
 	int num[999];
 
@@ -43,10 +44,16 @@ int _atoi(char *s)
 		}
 	}
 	
-	tot[0] = sig;
-	for (k = 1 ; k <= j ; k++)
+	for (k = 0 ; k < j ; k++)
 	{
-		tot[k] = num[k - 1];
+		tot[k] = num[k];
 	}
-	return (tot);
+
+	k = 0;
+
+	for (k = 0 ; k < j ; k++)
+	{
+		retint = retint + tot[k] * 100; 
+	}
+	return (retint);
 }
