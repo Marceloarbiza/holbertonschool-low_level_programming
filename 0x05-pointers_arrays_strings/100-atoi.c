@@ -26,9 +26,9 @@ int _atoi(char *s)
 		else if (num)
 		{
 			break;
+		}
+		if (*(s + i) == '-')
 		{
-			if (*(s + i) == '-')
-			{
 			sig *= -1;
 		}
 	}
