@@ -12,6 +12,8 @@ int _atoi(char *s)
 	int numi;
 	int sig;
 
+	num = 0.0;
+	i = 0;
 	sig = 1;
 
 	for (i = 0 ; *(s + i) != '\0' ; i++)
@@ -27,7 +29,6 @@ int _atoi(char *s)
 	}
 
 	i = 0;
-	num = 0.0;
 
 	for (i = 0 ; *(s + i) != '\0' ; i++)
 	{
