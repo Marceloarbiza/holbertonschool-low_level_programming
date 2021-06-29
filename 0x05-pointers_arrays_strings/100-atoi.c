@@ -19,16 +19,8 @@ int _atoi(char *s)
 	{
 		if (*(s + i) == '-')
 		{
-			neg++;	
+			sig *= -1;
 		}
-	}
-	if (neg % 2 == 0)
-	{
-		sig *= -1;
-	}
-	else
-	{
-		sig *= 1;
 	}
 
 	i = 0;
