@@ -32,6 +32,10 @@ int _atoi(char *s)
 			num *= 10;
 			num += *(s + i) - '0';
 		}
+		else if (num)
+		{
+			break;
+		}
 	}
 
 	num *= sig;
