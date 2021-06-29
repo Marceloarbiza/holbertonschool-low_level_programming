@@ -12,9 +12,8 @@ int _atoi(char *s)
 	int k;
 	int neg;
 	int sig;
-	int retint;
-	int tot[999];
-	int num[999];
+
+	sig = 1;
 
 	for (i = 0 ; *(s + i) != '\0' ; i++)
 	{
@@ -25,36 +24,11 @@ int _atoi(char *s)
 	}
 	if (neg % 2 == 0)
 	{
-		sig = 43;
+		sig *= 1;
 	}
 	else
 	{
-		sig = 45;
+		sig *= -1;
 	}
-	
-	i = 0;
-	j = 1;
-
-	for (i = 0 ; *(s + i) != '\0' ; i++)
-	{
-		if (*(s + i) > 47 && *(s + i) < 58)
-		{
-			num[j] = *(s + i);
-			j++;		
-		}
-	}
-	
-	for (k = 0 ; k < j ; k++)
-	{
-		tot[k] = num[k];
-	}
-
-	k = 0;
-
-	for (k = 0 ; k < j ; k++)
-	{
-		retint = retint + tot[k] * 100; 
-	}
-	retint = retint * sig;
-	return (retint);
+	return (sig);
 }
