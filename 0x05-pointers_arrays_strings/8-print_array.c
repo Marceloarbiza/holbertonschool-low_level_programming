@@ -20,7 +20,14 @@ void print_array(int *a, int n)
 	for (i = 0 ; i < n ; i++)
 	{
 		j = arint[i];
-		printf("%d", j);
+		if (i < n - 1)
+		{
+			printf("%d, ", j);
+		}
+		else
+		{
+			printf("%d", j);	
+		}
 	}
 	printf("\n");
 }
