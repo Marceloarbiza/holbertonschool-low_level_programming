@@ -12,12 +12,12 @@ void print_array(int *a, int n)
 	int arint[999];
 	int j;
 
-	for (int i = 0 ; i < n ; i++)
+	for (i = 0 ; i < n ; i++)
 	{
 		arint[i] = *(a + i);
 	}
 	i = 0;
-	for (int i = 0 ; i < n ; i++)
+	for (i = 0 ; i < n ; i++)
 	{
 		j = arint[i]
 		printf("%d", j);
