@@ -12,8 +12,8 @@ int _atoi(char *s)
 	int k;
 	int neg;
 	int sig;
-	char tot[999];
-	char num[999];
+	int tot[999];
+	int num[999];
 
 	for (i = 0 ; *(s + i) != '\0' ; i++)
 	{
@@ -48,5 +48,5 @@ int _atoi(char *s)
 	{
 		tot[k] = num[k - 1];
 	}
-	return (tot + '0');
+	return (tot);
 }
