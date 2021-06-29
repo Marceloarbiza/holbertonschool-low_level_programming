@@ -22,10 +22,6 @@ int _atoi(char *s)
 		{
 			sig *= -1;
 		}
-		else if (num)
-		{
-			break;
-		}
 	}
 
 	i = 0;
