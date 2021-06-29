@@ -55,5 +55,6 @@ int _atoi(char *s)
 	{
 		retint = retint + tot[k] * 100; 
 	}
+	retint * sig;
 	return (retint);
 }
