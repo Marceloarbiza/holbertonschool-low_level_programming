@@ -32,7 +32,7 @@ int _atoi(char *s)
 	}
 
 	i = 0;
-	num = 0;
+	num = 0.0;
 
 	for (i = 0 ; *(s + i) != '\0' ; i++)
 	{
