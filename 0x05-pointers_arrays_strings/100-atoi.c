@@ -8,7 +8,8 @@
 int _atoi(char *s)
 {
 	int i;
-	int num;
+	double num;
+	int numi;
 	int neg;
 	int sig;
 
@@ -41,7 +42,8 @@ int _atoi(char *s)
 			num += *(s + i) - '0';	
 		}	
 	}
-
-	num = num * sig;
-	return (num);
+	
+	int numi = num;
+	numi = numi * sig;
+	return (numi);
 }
