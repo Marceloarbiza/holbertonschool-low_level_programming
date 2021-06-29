@@ -24,11 +24,11 @@ int _atoi(char *s)
 	}
 	if (neg % 2 == 0)
 	{
-		sig *= 1;
+		sig *= -1;
 	}
 	else
 	{
-		sig *= -1;
+		sig *= 1;
 	}
 
 	i = 0;
