@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * *string_toupper - upper
- * @*: char
+ * @c: char
  *
  * Return: char
  */
