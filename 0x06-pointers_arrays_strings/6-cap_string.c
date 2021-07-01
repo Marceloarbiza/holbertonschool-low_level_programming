@@ -9,6 +9,8 @@ char *cap_string(char *c)
 {
 	int i, j;
 
+	j = 0;
+
 	for (i = 0 ; c[i] != '\0' ; i++)
 	{
 		if (c[i - 1] == ' ' || c[i - 1] == '\t' ||
@@ -26,16 +28,6 @@ char *cap_string(char *c)
 			c[i] = c[i] - 32;
 		}
 		j = 0;
-	}
-
-	i = 0;
-
-	for (i = 0 ; c[i] != '\0' ; i++)
-	{
-		if (c[i] == '\t')
-		{
-			c[i] = ' ';
-		}
 	}
 	return (c);
 }
