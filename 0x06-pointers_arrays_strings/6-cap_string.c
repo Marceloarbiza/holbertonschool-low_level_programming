@@ -27,5 +27,15 @@ char *cap_string(char *c)
 		}
 		j = 0;
 	}
+
+	i = 0;
+
+	for (i = 0 ; c[i] != '\0' ; i++)
+	{
+		if (c[i] == '\t')
+		{
+			c[i] = ' ';
+		}
+	}
 	return (c);
 }
