@@ -1,39 +1,34 @@
-#include "holberton.h"
 #include <stddef.h>
 /**
- * *_strstr - str
- * @haystack: char
- * @needle: char
- *
- * Return: char
+ * _strstr - finds a substring inside a string
+ * @haystack: string
+ * @needle: string
+ * Return: string
  */
 char *_strstr(char *haystack, char *needle)
 {
-
-	int posn, poshs;
+	int i = 0, j = 0;
 	char *p = NULL;
 
 	if (haystack && needle && needle[0] != '\0')
 	{
-		for (poshs = 0 ; haystack[poshs] != '\0' ; poshs++)
+		for (; haystack[i] != '\0'; i++)
 		{
-			if (haystack[poshs] == needle[posn])
+			if (haystack[i] == needle[j])
 			{
-				if(posn == 0)
+				if (j == 0)
 				{
-					p = haystack + poshs;
+					p = haystack + i;
 				}
-				
-				posn++;
-
-				if (needle[posn] == '\0')
+				j++;
+				if (needle[j] == 0)
 				{
 					break;
 				}
 			}
 			else
 			{
-				posn = 0;
+				j = 0;
 				p = NULL;
 			}
 		}
