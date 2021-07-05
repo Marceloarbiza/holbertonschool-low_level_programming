@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * int _strspn - strpn
- * @a: char
+ * _strspn - strpn
+ * @s: char
  * @accept: char
  *
  * Return: unsigned
