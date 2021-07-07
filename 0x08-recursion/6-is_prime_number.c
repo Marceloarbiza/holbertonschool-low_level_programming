@@ -21,7 +21,7 @@ int comp(int n, int j)
 
 #include "holberton.h"
 /**
-* _sqrt_recursion - recurion
+* is_prime_number - recurion
 * @n: int
 *
 * Return: int
