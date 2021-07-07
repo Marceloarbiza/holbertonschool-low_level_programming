@@ -28,7 +28,11 @@ int comp(int n, int j)
 */
 int is_prime_number(int n)
 {
-	if (comp(n, 1) < 0)
+	if (n < 0)
+	{
+		return (0);
+	}
+	else if (comp(n, 1) < 0)
 	{
 		return (1);
 	}
