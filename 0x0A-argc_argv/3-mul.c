@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - main
  * @argc: int
@@ -16,8 +17,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		i = *argv[1] - 48;
-		j = *argv[2] - 48;
+		i = atoi(argv[1]);
+		j = atoi(argv[2]);
 
 		k = i * j;
 
