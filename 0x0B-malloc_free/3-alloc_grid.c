@@ -15,15 +15,15 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 
-	matriz = (int**)malloc (width*sizeof(int *));
+	matriz = (int **)malloc(width * sizeof(int *));
 
 	for (i = 0 ; i < width ; i++)
 	{
-		matriz[i] = (int *) malloc (height*sizeof(int));
+		matriz[i] = (int *) malloc(height * sizeof(int));
 	}
 
 	return (matriz);
