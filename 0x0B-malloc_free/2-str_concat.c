@@ -12,9 +12,9 @@ char *str_concat(char *s1, char *s2)
 {
 	int i, j, k, m, len;
 	char *p = NULL;
-
+/*
 	if (s1 && s2)
-	{
+	{*/
 		for (i = 0 ; *(s1 + i) != '\0' ; i++)
 			;
 
@@ -42,6 +42,6 @@ char *str_concat(char *s1, char *s2)
 
 			*(p + len) = '\0';
 		}
-	}
+/*	}*/
 	return (p);
 }
