@@ -6,6 +6,7 @@
  * malloc_checked - malloc
  * @b: unsigned int
  *
+ * Return: i
  */
 void *malloc_checked(unsigned int b)
 {
