@@ -48,6 +48,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		lenS3++;
 	}
 
-	return (p);
+	p[lenTot] = '\0';
 
+	return (p);
 }
