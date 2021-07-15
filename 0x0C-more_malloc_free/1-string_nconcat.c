@@ -30,16 +30,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = lenS2;
 	}
-	
+
 	lenTot = lenS1 + n;
 
 	p = malloc(sizeof(char) * (lenTot));
-	
+
 	for (lenS3 = 0 ; lenS3 < lenS1 ; lenS3++)
 	{
 		p[lenS3] = s1[lenS3];
 	}
-	
+
 	lenS3 = 0;
 
 	for (lenS4 = lenS1 ; lenS4 < lenTot; lenS4++)
