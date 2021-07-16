@@ -20,14 +20,7 @@ int *array_range(int min, int max)
 
 	dif = max - min;
 
-	if (min < 0)
-	{
 	nray = malloc(sizeof(int) * (dif + 1));
-	}
-	else
-	{
-	nray = malloc(sizeof(int) * dif);
-	}
 
 	if (!nray)
 		return (NULL);
