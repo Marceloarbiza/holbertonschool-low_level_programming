@@ -10,10 +10,12 @@
  */
 struct dog
 {
-	dog_t *name;
+	char *name;
 	float age;
 	char *owner;
 };
+
+typedef dog->name dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
