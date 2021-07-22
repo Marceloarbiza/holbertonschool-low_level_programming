@@ -3,22 +3,17 @@
 #include <stdarg.h>
 #include <stdlib.h>
 /**
+  * sum_them_all - sum them
+  * @n: unsigned int
   *
-  *
-  *
+  * Return: int
   */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
 	int suma = 0;
-	
-	if (n == 0)
-	{
-		return (0);
-	}
-	else
-	{
+
 	va_start(ap, n);
 
 	for (i = 0 ; i < n ; i++)
@@ -27,6 +22,5 @@ int sum_them_all(const unsigned int n, ...)
 	}
 
 	va_end(ap);
-	}
 	return (suma);
 }
