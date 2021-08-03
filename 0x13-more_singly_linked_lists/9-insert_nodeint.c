@@ -2,52 +2,51 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
- * insert_nodeint_at_index - check the code
- * @head: head
- * @idx: idx
- * @n: n
- * Return: listint_t
- */
+* insert_nodeint_at_index - add node index
+* @head: listint_t
+* @n: int
+* @idx: int
+* Return: listint_t
+*/
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *new = NULL, *h = NULL, *tmp = NULL;
-	unsigned int i = 1;
+	listint_t *h = NULL, *new = NULL, *tmp = NULL;
+	unsigned int i = 0;
 
 	h = *head;
 	new = malloc(sizeof(listint_t));
-	
-	if (!new)
-		return (NULL);
-	else
+
+	if (new)
+	{
 		new->n = n;
-	
-	if (idx == 0)
-	{
-		new->next = h;
-		*head = new;
-	}
-	if (*head)
-	{
-		while (h->next && i < idx)
+		new->next = NULL;
+		if (*head)
 		{
-			h = h->next;
-			i++;
-		}
-		
-		if (h->next)
-		{
+			h = *head;
+
+			while (h->next && i < (idx - 1))
+			{
+				h = h->next;
+				i++;
+			}
+
 			tmp = h->next;
-			h->next = new;
 			new->next = tmp;
+
+			while (tmp->next)
+				tmp = tmp->next;
+
+			h->next = new;
 		}
 		else
 		{
-			h->next = new;
-			new->next = NULL;
+			*head = new;
 		}
-	
+	}
+	else
+	{
+		return (NULL);
 	}
 	return (new);
 }
