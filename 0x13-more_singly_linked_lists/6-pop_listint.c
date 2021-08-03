@@ -25,6 +25,10 @@ int pop_listint(listint_t **head)
 			free(header);
 			*head = nexus;
 		}
+		else
+		{
+			free_listint2(head);
+		}
 	}
 	return (num);
 }
