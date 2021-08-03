@@ -17,12 +17,12 @@ int pop_listint(listint_t **head)
 	{
 		header = *head;
 		nexus = (*head)->next;
+		free(header);
 		num = header->n;
 
 		if (nexus)
 		{
 			header->next = NULL;
-			free(header);
 			*head = nexus;
 		}
 		else
