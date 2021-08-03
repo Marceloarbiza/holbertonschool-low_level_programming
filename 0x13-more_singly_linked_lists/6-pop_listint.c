@@ -18,12 +18,13 @@ int pop_listint(listint_t **head)
 		header = *head;
 		nexus = (*head)->next;
 		num = header->n;
-		free(header);
 		
 		if (nexus)
 		{
 			header->next = NULL;
+			free(*head);
 			*head = nexus;
+			
 		}
 		else
 		{
