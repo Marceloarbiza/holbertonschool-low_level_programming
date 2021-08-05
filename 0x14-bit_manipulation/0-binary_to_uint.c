@@ -13,6 +13,9 @@ unsigned int binary_to_uint(const char *b)
 	int sum = 0;
 	int mul = 1;
 
+	if (!b)
+		return (NULL);
+
 	for (; b[i] ; i++)
 	{
 		if (b[i] != '1' && b[i] != '0')
