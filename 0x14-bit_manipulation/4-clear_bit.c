@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * clear_bit - check the code
+ * @n: int
+ * @index: int
+ * Return: int
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
@@ -13,7 +14,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 	}
 
-	*n &= (1 << index);
-	
+	*n &= ~(1 << index);
+
 	return (1);
 }
