@@ -4,15 +4,16 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * read_textfile - check the code
+ * @filename: filenmae
+ * @letters: letters
+ * Return: ssize_t
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t a, b, c;
 	char *buf;
-	
+
 	if (filename == NULL)
 		return (0);
 
