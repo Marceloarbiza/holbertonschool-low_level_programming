@@ -31,7 +31,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	for (i = 0; i < size; i++)
 	{
-		hashtable->array = NULL;
+		hashtable->array[i] = NULL;
 	}
 
 	hashtable->size = size;
