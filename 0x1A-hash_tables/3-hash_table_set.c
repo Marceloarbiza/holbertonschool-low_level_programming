@@ -15,13 +15,13 @@ hash_node_t *create_node(const char *key, const char *value)
 	if (!new_node)
 		return (NULL);
 
-	new_node->key = strdup(key);
+	strcpy(new_node->key, key);
 
-	if (!new_node->key)
+	/*if (!new_node->key)
 	{
 		free(new_node);
 		return (NULL);
-	}
+	}*/
 	new_node->value = strdup(value);
 
 	if (!new_node->value)
