@@ -15,14 +15,14 @@ hash_node_t *create_node(const char *key, const char *value)
 	if (!new_node)
 		return (NULL);
 
-	new_node->key = (char *)malloc(strlen(key) + 1);
-/*
+	new_node->key = strdup(key);
+
 	if (!new_node->key)
 	{
 		free(new_node);
 		return (NULL);
-	}*/
-	new_node->value = (char *)malloc(strlen(value) + 1);
+	}
+	new_node->value = strdup(value);
 
 	if (!new_node->value)
 	{
@@ -30,8 +30,6 @@ hash_node_t *create_node(const char *key, const char *value)
 		free(new_node);
 		return (NULL);
 	}
-	strcpy(new_node->key, key);
-	strcpy(new_node->value, value);
 	new_node->next = NULL;
 	return (new_node);
 }
