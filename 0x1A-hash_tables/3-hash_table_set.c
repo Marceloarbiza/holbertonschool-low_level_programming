@@ -57,7 +57,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	idx = key_index((const unsigned char *)key, ht->size);
 	arrtmp = ht->array[idx];
-	while (arrtmp)
+	/*while (arrtmp)
 	{
 		if (strcmp(arrtmp->key, key) == 0)
 		{
@@ -70,6 +70,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		arrtmp = arrtmp->next;
 	}
+	*/
 	node = create_node(key, value);
 	if (!node)
 		return (0);
