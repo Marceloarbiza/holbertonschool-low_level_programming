@@ -9,9 +9,13 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int i;
 
 	if (ht)
+	{
+		printf("{");
 		for (i = 0; i < ht->size; i++)
 		{
 			if (ht->array[i])
-				printf("%s\n", ht->array[i]->value);
+				printf("'%s': '%s', ", ht->array[i]->key, ht->array[i]->value);
 		}
+		printf("}\n");
+	}
 }
