@@ -10,7 +10,7 @@ hash_node_t *create_node(const char *key, const char *value)
 {
 	hash_node_t *new_node = NULL;
 
-	new_node = malloc(sizeof(hash_node_t));
+	new_node = malloc(sizeof(hash_node_t *));
 
 	if (!new_node)
 		return (NULL);
