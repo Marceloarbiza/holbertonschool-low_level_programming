@@ -49,7 +49,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *arrtmp = NULL;
 	char *value2;
 
-	if (!ht || !ht->array || ht->size == 0 || !key || !value || strlen(key) == 0)
+	if (!ht || !ht->array || ht->size == 0 || !key || !value)
 	{
 		return (0);
 	}
