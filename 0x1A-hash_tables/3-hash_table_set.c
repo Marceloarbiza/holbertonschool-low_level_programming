@@ -46,29 +46,28 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
 	hash_node_t *node = NULL;
-	/*hash_node_t *arrtmp;
-	char *value2;*/
+	hash_node_t *arrtmp = NULL;
+	char *value2;
 
 	if (!ht || !ht->array || ht->size == 0 || !key || !value || strlen(key) == 0)
 	{
 		return (0);
 	}
 	idx = key_index((const unsigned char *)key, ht->size);
-	/*arrtmp = ht->array[idx];
+	arrtmp = ht->array[idx];
 	while (arrtmp)
 	{
 		if (strcmp(arrtmp->key, key) == 0)
 		{
-			value2 = (char *)malloc(strlen(value) + 1);
+			value2 = strdup(value);
 			if (!value2)
 				return (0);
 			free(arrtmp->value);
-			strcpy(node->value, value2);
+			arrtmp->value = value2;
 			return (1);
 		}
 		arrtmp = arrtmp->next;
 	}
-	*/
 	node = create_node(key, value);
 	if (!node)
 		return (0);
