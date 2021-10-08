@@ -48,16 +48,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
 	hash_node_t *node = NULL;
-	hash_node_t *arrtmp;
-	char *value2;
+	/*hash_node_t *arrtmp;
+	char *value2;*/
 
 	if (!ht || !ht->array || !value || ht->size == 0 || strlen(key) == 0)
 	{
 		return (0);
 	}
 	idx = key_index((const unsigned char *)key, ht->size);
-	arrtmp = ht->array[idx];
-	/*while (arrtmp)
+	/*arrtmp = ht->array[idx];
+	while (arrtmp)
 	{
 		if (strcmp(arrtmp->key, key) == 0)
 		{
