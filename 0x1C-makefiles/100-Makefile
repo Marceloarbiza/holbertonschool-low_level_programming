@@ -6,12 +6,9 @@ NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 all: m.h $(OBJ)
 	$(CC) $(OBJ) m.h -o $(NAME)
-
 clean:
-	$(RM) *~ $(NAME)
-
+	$(RM) $(wildcard *~) $(NAME)
 oclean:
 	$(RM) $(OBJ)
-
 fclean: clean oclean
 re: oclean all
