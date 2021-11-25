@@ -5,6 +5,7 @@
     perimeter
 """
 
+
 def island_perimeter(grid):
     """ primeter of perimeter of the perimeter """
     p = 0
@@ -18,5 +19,5 @@ def island_perimeter(grid):
                 if i == 0 or grid[i-1][j] == 0:
                     p += 1
                 if i == len(grid)-1 or grid[i+1][j] == 0:
-                    p+= 1
+                    p += 1
     return p
