@@ -12,9 +12,19 @@
 int binary_help(int *array, size_t beg, size_t end, int value)
 {
 	size_t mid;
+	size_t i;
 
 	if (end >= beg)
 	{
+		printf("Searching in array: ");
+		for (i = beg; i <= end; i++)
+		{
+			if (i < end)
+				printf("%d, ", (int)array[(int)i]);
+			else
+				printf("%d\n", (int)array[(int)i]);
+		}
+
 		mid = (end + beg) / 2;
 
 		if (array[(int)mid] == (int)value)
@@ -44,20 +54,9 @@ int binary_help(int *array, size_t beg, size_t end, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i;
 	size_t beg = 0;
 	size_t end = size - 1;
 
-
-	printf("Value: %d\n", (int)value);
-	printf("Searching in array: ");
-	for (i = beg; i <= end; i++)
-	{
-		if (i < size - 1)
-			printf("%d, ", (int)array[(int)i]);
-		else
-			printf("%d\n", (int)array[(int)i]);
-	}
 	if (array)
 		return (binary_help(array, beg, end, value));
 	else
