@@ -43,8 +43,6 @@ int binary_help(int *array, size_t beg, size_t end, int value)
 			beg = mid + 1;
 			return (binary_help(array, beg, end, value));
 		}
-		else
-			return (-1);
 	}
 	return (-1);
 }
