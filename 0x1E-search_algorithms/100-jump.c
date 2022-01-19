@@ -19,11 +19,6 @@ int jump_search(int *array, size_t size, int value)
 	sqrt_int = (int)sqrt_double;
 	if (!array)
 		return (-1);
-	if (array[i] == value)
-	{
-		printf("Value checked array[%d] = [%d]\n", i, array[i]);
-		return (i);
-	}
 	for (i = 0; i < size_i; i += sqrt_int)
 	{
 		z = i + sqrt_int;
