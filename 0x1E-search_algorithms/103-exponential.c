@@ -75,14 +75,8 @@ int exponential_search(int *array, size_t size, int value)
 			if (i >= size)
 				i = size - 1;
 			if (array[i] == value)
-			{
 				return (i);
-			}
-			else if (array[i] < value)
-			{
-				index_anterior = i;
-			}
-			else
+			if ((array[i] > value) || (i == size - 1))
 			{
 				beg = index_anterior;
 				end = i;
@@ -90,6 +84,7 @@ int exponential_search(int *array, size_t size, int value)
 				return (binary_help(array, beg, end, value));
 			}
 			printf("Value checked array[%d] = [%d]\n", (int)i, array[i]);
+			index_anterior = i;
 		}
 	}
 	return (-1);
