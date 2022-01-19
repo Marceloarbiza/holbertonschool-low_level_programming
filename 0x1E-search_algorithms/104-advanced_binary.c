@@ -40,7 +40,7 @@ int binary_help(int *array, size_t beg, size_t end, int value)
 		}
 		else if (array[(int)mid] > (int)value)
 		{
-			beg = mid + 1;
+			end = mid - 1;
 			return (binary_help(array, beg, end, value));
 		}
 	}
